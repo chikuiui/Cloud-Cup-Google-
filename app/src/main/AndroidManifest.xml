@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.WaitingActivity"
+            android:exported="true"
+            android:label="@string/waitingTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.EndOfGameActivity"
+            android:exported="true"
+            android:label="@string/gameOverTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.BlankGameActivity"
+            android:exported="true"
+            android:label="@string/firstRoomTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.TappingGameActivity"
+            android:exported="true"
+            android:label="@string/tapGameTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.MathGameActivity"
+            android:exported="true"
+            android:label="@string/mathGameMessage"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.ShakingGameActivity"
+            android:exported="true"
+            android:label="@string/shakeGameTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.SwipeGameActivity"
+            android:exported="true"
+            android:label="@string/swipeGameTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.TurnGameActivity"
+            android:exported="true"
+            android:label="@string/turnGameMessage"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".games.SequenceGameActivity"
+            android:exported="true"
+            android:label="@string/sequenceGameTitle"
+            android:noHistory="true"
+            android:screenOrientation="fullSensor">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
